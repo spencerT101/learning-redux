@@ -35,7 +35,14 @@ const counter =(state = 0, action) => {
   }
 };
 
+let store = createStore(counter);
+
+//Display in console
+store.subscribe(() => console.log(store.getState()));
+
 //DISPATCH
+
+store.dispatch(increment());
 
 ReactDOM.render(
   <React.StrictMode>
