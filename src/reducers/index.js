@@ -8,3 +8,5 @@ const allReducers = combineReducers({
     counter: counterReducer,
     isLogged: loggedReducer
 });
+
+export default allReducers;
